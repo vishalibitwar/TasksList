@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 50%;
+  box-shadow: 0.5rem 0.5rem 0.8rem black;
+  /* min-height: 500px */
+}
+
+body {
+  background-color: skyblue;
+  background: url('./background.png');
+  font-family: 'Merriweather', serif;
+   background-attachment: fixed;
+}
+
+h1 {
+  text-shadow: 0.2rem 0.2rem 0.3rem #fff;
+  color: #333;
+}
+
+footer a {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-decoration: none !important;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  padding: 0.7rem;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+footer a:hover {
+  color: white;
+}
+
+@media(max-width: 700px) {
+  .box {
+    width: 95%;
+  }
+  footer {
+    visibility: hidden;
+  }
+}
